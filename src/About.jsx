@@ -6,10 +6,10 @@ import aboutImage from "./assets/about-image.jpeg";
 
 function About() {
   return (
-    <>
+    <main>
       <div className="about-container">
         <div className="left-about">
-          <img src={aboutImage} draggable="false" />
+          <img src={aboutImage} className="pulsing" draggable="false" />
           <br />
           <p className="name-tag">Marceo S.</p>
         </div>
@@ -40,24 +40,33 @@ function About() {
             <div className="social-icons">
               <button className="instagram-button">
                 <a href="https://www.instagram.com/marceosayo/" target="_blank">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="hover:text-rose-300 active:text-rose-500 transition duration-200 ease-in-out"
+                  />
                 </a>
               </button>
               <button className="github-button">
                 <a href="https://github.com/marceosayo" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="hover:text-emerald-300 active:text-emerald-500 transition duration-200 ease-in-out"
+                  />
                 </a>
               </button>
               <button className="email-button">
                 <a href="mailto:marceokuehn97@gmail.com" target="_blank">
-                  <FontAwesomeIcon icon={faEnvelope} />
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="hover:text-sky-300 active:text-sky-500 transition duration-200 ease-in-out"
+                  />
                 </a>
               </button>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 }
 

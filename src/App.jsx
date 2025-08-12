@@ -14,11 +14,8 @@ function App() {
     <>
       <NavBar projectsRef={projectsRef} contactRef={contactRef} />
       <About />
-      <div className="space"></div>
       <Projects ref={projectsRef} />
-      <div className="space"></div>
       <Contact ref={contactRef} />
-      <div className="space"></div>
       <Footer />
     </>
   );

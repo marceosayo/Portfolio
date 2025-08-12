@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
   margin: 0;
   padding: 0;
@@ -33,10 +35,7 @@ html {
   background-color: black;
   color: var(--white);
   box-shadow: var(--shadow);
-  position: sticky;
-  top: 0;
   transition: 0.5s ease;
-  z-index: 1000;
 }
 
 .logo {
@@ -71,13 +70,17 @@ html {
 .nav-links {
   display: flex;
   gap: 1.5rem;
-  font-size: 1rem;
   margin-right: 2rem;
   transition: 0.5s ease;
   overflow: clip;
 }
 
-.nav-links p {
+.nav-links button {
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1rem;
   transition: 0.2s ease;
   cursor: pointer;
 
@@ -91,6 +94,8 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  margin-top: 14vh;
+  margin-bottom: 40vw;
 }
 
 .left-about {
@@ -104,7 +109,6 @@ html {
   border: 12px double rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   transition: 0.4s ease;
-  animation: pulse 2s infinite ease-in-out;
   transform-origin: center;
   display: inline-block;
 
@@ -189,14 +193,6 @@ html {
   text-decoration: none;
   color: var(--white);
   transition: 0.2s ease;
-
-  &:hover {
-    color: rgb(192, 227, 145, 0.9);
-  }
-
-  &:active {
-    color: rgba(145, 173, 108, 0.9);
-  }
 }
 
 .projects-container {
@@ -212,6 +208,7 @@ html {
   border-radius: 60px;
   padding: min(5em, 5%);
   margin: 20px;
+  margin-bottom: 40vw;
   box-shadow: var(--shadow);
 }
 
@@ -389,6 +386,8 @@ html {
 .name,
 .email,
 .message {
+  color: black;
+  background: var(--white);
   min-width: 10%;
   max-width: 80%;
   height: auto;
@@ -410,11 +409,12 @@ html {
 }
 
 .contact-container button {
+  color: black;
   background-color: hsl(185, 45%, 94%);
   padding: min(1.5em, 1.5%);
   border: none;
   border-radius: min(0.6rem, 1.5rem);
-  margin-top: 1rem;
+  margin: 1rem;
   font-size: clamp(1rem, 2vw, 1.3rem);
   cursor: pointer;
 
@@ -524,6 +524,7 @@ textarea {
 
   .about-container {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .right-about {
@@ -541,17 +542,20 @@ textarea {
   .projects-container {
     border-radius: 0;
     margin: 0;
+    margin-bottom: 40vw;
   }
 
   .contact-container {
     border-radius: 0;
     margin: 0;
+    margin-bottom: 40vw;
     width: auto;
   }
 
   .form-section {
     padding: min(2em, 2%);
     margin: min(2.5em, 2.5%);
+    margin-top: 1.3rem;
   }
 }
 
@@ -654,7 +658,7 @@ textarea {
   }
 }
 
-@keyframes pulse {
+@keyframes pulsing {
   0% {
     transform: scale(1);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
@@ -667,4 +671,8 @@ textarea {
     transform: scale(1);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
   }
+}
+
+.pulsing {
+  animation: pulsing 2s infinite ease-in-out;
 }

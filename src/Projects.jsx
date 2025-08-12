@@ -9,15 +9,15 @@ import profileCardPic from "./assets/projects-demos/profile-card.png";
 const Projects = forwardRef((props, ref) => {
   return (
     <>
-      <div className="projects-container" ref={ref}>
+      <section className="projects-container" ref={ref}>
         <h1 className="projects-container-title">Projects</h1>
 
         <hr />
 
-        <div className="project-L">
-          <div className="left-project">
+        <article className="project-L">
+          <figure className="left-project">
             <img src={fishingIslandPic} draggable="false" />
-          </div>
+          </figure>
 
           <div className="right-project">
             <h1>Fishing Island</h1>
@@ -42,11 +42,11 @@ const Projects = forwardRef((props, ref) => {
               </a>
             </button>
           </div>
-        </div>
+        </article>
 
         <hr />
 
-        <div className="project-R">
+        <article className="project-R">
           <div className="left-project">
             <h1>Weather App</h1>
             <p>
@@ -70,17 +70,17 @@ const Projects = forwardRef((props, ref) => {
               </a>
             </button>
           </div>
-          <div className="right-project">
+          <figure className="right-project">
             <img src={weatherAppPic} draggable="false" />
-          </div>
-        </div>
+          </figure>
+        </article>
 
         <hr />
 
-        <div className="project-L">
-          <div className="left-project">
+        <article className="project-L">
+          <figure className="left-project">
             <img src={wordBankPic} draggable="false" />
-          </div>
+          </figure>
           <div className="right-project">
             <h1>Vocabulary Word Bank</h1>
             <p>
@@ -98,11 +98,11 @@ const Projects = forwardRef((props, ref) => {
               </a>
             </button>
           </div>
-        </div>
+        </article>
 
         <hr />
 
-        <div className="project-R">
+        <article className="project-R">
           <div className="left-project">
             <h1>Responsive Modal Windows</h1>
             <p>
@@ -126,17 +126,17 @@ const Projects = forwardRef((props, ref) => {
               </a>
             </button>
           </div>
-          <div className="right-project">
+          <figure className="right-project">
             <img src={modalWindowsPic} draggable="false" />
-          </div>
-        </div>
+          </figure>
+        </article>
 
         <hr />
 
-        <div className="project-L">
-          <div className="left-project">
+        <article className="project-L">
+          <figure className="left-project">
             <img src={profileCardPic} draggable="false" />
-          </div>
+          </figure>
           <div className="right-project">
             <h1>Profile Card Generator</h1>
             <p>
@@ -160,8 +160,8 @@ const Projects = forwardRef((props, ref) => {
               </a>
             </button>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </>
   );
 });

@@ -14,6 +14,7 @@ Thank you for visiting my portfolio, and I hope I can meet all of your coding ne
 - Node.js
 - Vite
 - CSS3
+- Tailwind CSS
 - VsCode
 - Git
 

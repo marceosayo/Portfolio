@@ -19,28 +19,28 @@ function NavBar({ projectsRef, contactRef }) {
   };
 
   return (
-    <>
-      <div className="nav-container">
+    <header className="sticky top-0 z-1000">
+      <nav className="nav-container">
         <div className="logo">
-          <p className="f-name">marceo</p>
-          <p className="l-name">santos</p>
+          <span className="f-name">marceo</span>
+          <span className="l-name">santos</span>
         </div>
 
         <div className="nav-links">
-          <p className="about" onClick={scrollToTop}>
+          <button type="button" className="about" onClick={scrollToTop}>
             about
-          </p>
+          </button>
 
-          <p className="projects" onClick={scrollToProjects}>
+          <button type="button" className="projects" onClick={scrollToProjects}>
             projects
-          </p>
+          </button>
 
-          <p className="contact" onClick={scrollToContact}>
+          <button type="button" className="contact" onClick={scrollToContact}>
             contact
-          </p>
+          </button>
         </div>
-      </div>
-    </>
+      </nav>
+    </header>
   );
 }
 
